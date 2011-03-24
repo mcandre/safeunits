@@ -2,7 +2,7 @@
 
 module SafeUnits where
 
-data Distance = Cm Double | In Double deriving (Eq, Ord)
+data Distance = Cm Double | In Double deriving (Eq)
 
 instance Show Distance where
 	show (Cm x) = show x ++ " cm"
@@ -16,7 +16,7 @@ toIn :: Distance -> Distance
 toIn (In x) = In x
 toIn (Cm x) = In (2.54 * x)
 
-data Farad = Farad Double deriving (Eq, Ord)
+data Farad = Farad Double deriving (Eq)
 
 instance Show Farad where
 	show (Farad x) = show x ++ " Farad"
