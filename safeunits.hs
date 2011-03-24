@@ -33,4 +33,4 @@ main = let
 		putStrLn $ (show cm) ++ " of capacitance = " ++ (show . capacitance) cm
 
 		-- Error: Non-exhaustive patterns in function capacitance
-		-- putStrLn $ (show in_) ++ " of capacitance = " ++ (show . capacitance) in_
+		putStrLn $ (show in_) ++ " of capacitance = " ++ (show . capacitance) in_
