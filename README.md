@@ -2,7 +2,7 @@ safeunits - Because a USD $125,000,000 NASA Mars Climate Orbiter is worth it
 
 HOMEPAGE
 
-http://tinyurl.com/marsclimateorbiter
+[http://tinyurl.com/marsclimateorbiter](http://tinyurl.com/marsclimateorbiter)
 
 EXAMPLE
 
