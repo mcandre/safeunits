@@ -29,8 +29,8 @@ main = let
 		cm = Cm 1
 		in_ = toIn cm
 	in do
-		putStrLn $ (show cm) ++ " = " ++ (show in_)
-		putStrLn $ (show cm) ++ " of capacitance = " ++ (show . capacitance) cm
+		putStrLn $ show cm ++ " = " ++ show in_
+		putStrLn $ show cm ++ " of capacitance = " ++ (show . capacitance) cm
 
 		-- Error: Non-exhaustive patterns in function capacitance
-		putStrLn $ (show in_) ++ " of capacitance = " ++ (show . capacitance) in_
+		putStrLn $ show in_ ++ " of capacitance = " ++ (show . capacitance) in_
