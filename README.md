@@ -1,10 +1,10 @@
-safeunits - Because a USD $125,000,000 NASA Mars Climate Orbiter is worth it
+# safeunits - Because a USD $125,000,000 NASA Mars Climate Orbiter is worth it
 
-HOMEPAGE
+## HOMEPAGE
 
 [http://tinyurl.com/marsclimateorbiter](http://tinyurl.com/marsclimateorbiter)
 
-EXAMPLE
+## EXAMPLE
 
 	$ runhaskell safeunits.hs 
 	1.0 cm = 2.54 in
