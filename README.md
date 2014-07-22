@@ -2,10 +2,16 @@
 
 # EXAMPLE
 
-    $ make
-    1.0 cm = 2.54 in
-    1.0 cm of capacitance = 1.113e-12 Farad
-    safeunits.hs: safeunits.hs:25:0-41: Non-exhaustive patterns in function capacitance
+```
+$ make
+ghc -O2 -Wall -fwarn-tabs --make -fforce-recomp -o safeunits -main-is SafeUnits SafeUnits.hs
+[1 of 1] Compiling SafeUnits        ( SafeUnits.hs, SafeUnits.o )
+Linking safeunits ...
+./safeunits
+1.0 cm = 2.54 in
+1.0 cm of capacitance = 1.113e-12 Farad
+2.54 in of capacitance = 1.1130000000000004e-12 Farad
+```
 
 # HOMEPAGE
 

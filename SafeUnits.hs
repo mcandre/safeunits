@@ -23,6 +23,7 @@ instance Show Farad where
 
 capacitance :: Distance -> Farad
 capacitance (Cm x) = Farad (1.113e-12 * x)
+capacitance y = (capacitance . toCm) y
 
 main :: IO ()
 main = let
