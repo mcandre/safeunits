@@ -14,7 +14,10 @@ $(BIN): SafeUnits.hs
 hlint:
 	hlint .
 
-lint: hlint
+lili:
+	bundle exec lili .
+
+lint: hlint lili
 
 guard:
 	bundle exec guard
