@@ -8,21 +8,15 @@ test: $(BIN)
 	$(BIN)
 
 $(BIN): SafeUnits.hs
-	mkdir -p bin/
+	mkdir -p bin
 	ghc $(FLAGS) SafeUnits.hs
 
 hlint:
 	hlint .
 
-lili:
-	bundle exec lili .
-
-lint: hlint lili
-
-guard:
-	bundle exec guard
+lint: hlint
 
 clean:
-	-rm -rf bin/
+	-rm -rf bin
 	-rm *.o
 	-rm *.hi

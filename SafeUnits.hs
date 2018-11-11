@@ -5,8 +5,8 @@ module SafeUnits where
 data Distance = Cm Double | In Double deriving (Eq)
 
 instance Show Distance where
-  show (Cm x) = show x ++ " cm"
-  show (In x) = show x ++ " in"
+    show (Cm x) = show x ++ " cm"
+    show (In x) = show x ++ " in"
 
 toCm :: Distance -> Distance
 toCm (Cm x) = Cm x
@@ -19,7 +19,7 @@ toIn (Cm x) = In (2.54 * x)
 data Farad = Farad Double deriving (Eq)
 
 instance Show Farad where
-  show (Farad x) = show x ++ " Farad"
+    show (Farad x) = show x ++ " Farad"
 
 capacitance :: Distance -> Farad
 capacitance (Cm x) = Farad (1.113e-12 * x)
@@ -27,11 +27,11 @@ capacitance y = (capacitance . toCm) y
 
 main :: IO ()
 main = let
-  cm = Cm 1
-  in_ = toIn cm
-    in do
-      putStrLn $ show cm ++ " = " ++ show in_
-      putStrLn $ show cm ++ " of capacitance = " ++ (show . capacitance) cm
+    cm = Cm 1
+    in_ = toIn cm
+        in do
+            putStrLn $ show cm ++ " = " ++ show in_
+            putStrLn $ show cm ++ " of capacitance = " ++ (show . capacitance) cm
 
-      -- Error: Non-exhaustive patterns in function capacitance
-      putStrLn $ show in_ ++ " of capacitance = " ++ (show . capacitance) in_
+            -- Error: Non-exhaustive patterns in function capacitance
+            putStrLn $ show in_ ++ " of capacitance = " ++ (show . capacitance) in_
