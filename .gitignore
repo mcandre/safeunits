@@ -1,6 +1,5 @@
-bin/
+
 # Created by https://www.gitignore.io/api/haskell
-# Edit at https://www.gitignore.io/?templates=haskell
 
 ### Haskell ###
 dist
@@ -22,8 +21,7 @@ cabal.sandbox.config
 *.eventlog
 .stack-work/
 cabal.project.local
-cabal.project.local~
 .HTF/
-.ghc.environment.*
+
 
 # End of https://www.gitignore.io/api/haskell

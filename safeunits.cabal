@@ -1,0 +1,23 @@
+name:           safeunits
+version:        0.0.1
+category:       Math
+synopsis:       An attempt at explicit scalar units
+description:    A library encouraging more explicit units for each numerical value
+license:        BSD3
+license-file:   LICENSE.md
+author:         Andrew Pennebaker
+maintainer:     andrew.pennebaker@gmail.com
+build-type:     Simple
+cabal-version:  >=1.8
+
+source-repository head
+    type:     git
+    location: https://github.com/mcandre/safeunits.git
+
+executable safeunits
+    build-depends:
+        base              >= 4.3.1.0 && < 5
+
+    main-is: CLI.hs
+    ghc-options: -Wall -fwarn-tabs
+    hs-source-dirs: src
